@@ -21,6 +21,7 @@ add_definitions(-DDP_HOME_FALLBACK=\"${DP_HOME}\")
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake")
 include("dp")
 include("dp3rdParty")
+include("FindNVGLEW")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 

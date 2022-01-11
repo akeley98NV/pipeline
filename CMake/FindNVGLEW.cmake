@@ -32,7 +32,8 @@ endif()
 set(GLEW_INCLUDE_DIRS ${GLEW_INCLUDE_DIR})
 set(GLEW_LIBRARIES ${GLEW_LIBRARY})
 
-include(${CMAKE_CURRENT_LIST_DIR}/FindPackageHandleStandardArgs.cmake)
+# include(${CMAKE_CURRENT_LIST_DIR}/FindPackageHandleStandardArgs.cmake)
+include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(GLEW
                                   REQUIRED_VARS GLEW_INCLUDE_DIR GLEW_LIBRARY)
 
