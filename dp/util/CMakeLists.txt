@@ -102,6 +102,10 @@ if (MSVC)
   )
 endif()
 
+if (UNIX)
+  target_link_libraries(DPUtil dl)
+endif()
+
 if (WIN32 AND CMAKE_COMPILER_IS_GNUCC)
   # GCC requires the declspec(export) keyword behind the class keyword to export the vtable ( class declspec(export) MyKlass {} ).
   # Export everything for now and adopt sources later.
